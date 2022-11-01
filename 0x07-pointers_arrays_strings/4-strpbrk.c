@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 #include <stdio.h>
 
@@ -21,6 +21,7 @@ char *_strpbrk(char *s, char *accept)
 		for (j = 0; accept[j] != '\0'; j++)
 
 		{
+
 			if (*s == accept[j])
 
 			{
@@ -31,7 +32,6 @@ char *_strpbrk(char *s, char *accept)
 		}
 
 		s++;
-
 	}
 
 	return (NULL);
